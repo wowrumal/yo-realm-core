@@ -469,20 +469,6 @@ let package = Package(
             resources: [.copy("catch2/catch_user_config.hpp")],
             publicHeadersPath: "."),
         .target(
-            name: "Catch2",
-            dependencies: ["Catch2Generated"],
-            path: "external/catch/src",
-            exclude: [
-                "CMakeLists.txt",
-                "catch2/catch_user_config.hpp.in",
-                "catch2/internal/catch_main.cpp"
-                ],
-            publicHeadersPath: ".",
-            cxxSettings: ([
-                .headerSearchPath("catch2"),
-                .define("CATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS")
-            ] + cxxSettings) as [CXXSetting]),
-        .target(
             name: "CoreTestUtils",
             dependencies: ["RealmCore"],
             path: "test/util",
@@ -493,7 +479,7 @@ let package = Package(
             cxxSettings: (cxxSettings) as [CXXSetting]),
         .target(
             name: "ObjectStoreTestUtils",
-            dependencies: ["RealmCore", "SyncServer", "Catch2", "CoreTestUtils"],
+            dependencies: ["RealmCore", "SyncServer", "CoreTestUtils"],
             path: "test/object-store/util",
             publicHeadersPath: ".",
             cxxSettings: ([

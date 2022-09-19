@@ -2221,7 +2221,7 @@ void ServerHistory::record_current_schema_version(Array& schema_versions, versio
         Array sv_library_versions{alloc};
         sv_library_versions.set_parent(&schema_versions, s_sv_library_versions_iip);
         sv_library_versions.init_from_parent();
-        const char* library_version = REALM_VERSION_STRING;
+        const char* library_version = "12.7.0";//REALM_VERSION_STRING;
         std::size_t size = std::strlen(library_version);
         Array value{alloc};
         bool context_flag = false;

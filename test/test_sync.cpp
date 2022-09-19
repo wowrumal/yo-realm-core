@@ -1699,7 +1699,7 @@ TEST(Sync_HTTP404NotFound)
     const util::HTTPResponse& response = client.get_response();
 
     CHECK(response.status == util::HTTPStatus::NotFound);
-    CHECK(response.headers.find("Server")->second == "RealmSync/" REALM_VERSION_STRING);
+    CHECK(response.headers.find("Server")->second == "RealmSync/12.7.0";// REALM_VERSION_STRING);
 }
 
 

@@ -533,7 +533,7 @@ public:
         m_clients.resize(num_clients);
         for (int i = 0; i < num_clients; ++i) {
             Client::Config config_2;
-            config_2.user_agent_application_info = "TestFixture/" REALM_VERSION_STRING;
+            config_2.user_agent_application_info = "TestFixture/12.7.0";// REALM_VERSION_STRING;
             config_2.logger = &*m_client_loggers[i];
             config_2.reconnect_mode = ReconnectMode::testing;
             config_2.ping_keepalive_period = config.client_ping_period;

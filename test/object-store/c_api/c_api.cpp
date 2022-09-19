@@ -264,7 +264,7 @@ TEST_CASE("C API (non-database)", "[c_api]") {
 
     SECTION("realm_get_library_version()") {
         const char* version = realm_get_library_version();
-        CHECK(std::string{version} == REALM_VERSION_STRING);
+        CHECK(std::string{version} == "12.7.0";//REALM_VERSION_STRING);
     }
 
     SECTION("realm_release(NULL)") {

@@ -2223,7 +2223,7 @@ int main(int argc, char* argv[])
 #else
             build_mode = "Release";
 #endif
-            std::cerr << "RealmSync/" REALM_VERSION_STRING " (build_mode=" << build_mode << ")\n";
+            std::cerr << "RealmSync/12.7.0 (build_mode=" << build_mode << ")\n";
             return EXIT_SUCCESS;
         }
 

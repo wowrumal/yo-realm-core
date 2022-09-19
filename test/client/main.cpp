@@ -1098,7 +1098,7 @@ int main(int argc, char* argv[])
     sync_base_logger.set_level_threshold(sync_log_level);
     util::PrefixLogger sync_logger{"Sync: ", sync_base_logger};
     sync::Client::Config config;
-    config.user_agent_application_info = "TestClient/" REALM_VERSION_STRING;
+    config.user_agent_application_info = "TestClient/12.7.0";
     config.logger = &sync_logger;
     config.one_connection_per_session = connection_per_session;
     config.dry_run = dry_run;

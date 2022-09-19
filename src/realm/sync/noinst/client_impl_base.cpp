@@ -203,7 +203,7 @@ std::string ClientImpl::make_user_agent_string(ClientConfig& config)
     if (platform_info.empty())
         platform_info = util::get_platform_info(); // Throws
     std::ostringstream out;
-    out << "RealmSync/" REALM_VERSION_STRING " (" << platform_info << ")"; // Throws
+    out << "RealmSync/12.7.0 (" << platform_info << ")"; // Throws
     if (!config.user_agent_application_info.empty())
         out << " " << config.user_agent_application_info; // Throws
     return out.str();                                     // Throws

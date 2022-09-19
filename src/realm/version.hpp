@@ -26,7 +26,7 @@
 #endif
 
 #define REALM_PRODUCT_NAME "realm-core"
-#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-" REALM_VERSION_STRING "]"
+#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-12.7.0]"
 
 namespace realm {
 

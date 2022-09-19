@@ -1914,7 +1914,7 @@ private:
 
     void add_common_http_response_headers(HTTPResponse& response)
     {
-        response.headers["Server"] = "RealmSync/" REALM_VERSION_STRING; // Throws
+        response.headers["Server"] = "RealmSync/12.7.0"; //REALM_VERSION_STRING; // Throws
     }
 
     void read_error(std::error_code ec)
